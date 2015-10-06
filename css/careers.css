@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* These CSS rules will effect the Main Page. */
+
+/* Meet the Team */
+/* END Meet the Team */
+
+/* Careers */
+/* END Careers */
+
+/* Testimonial */
+/* END Testimonial */
+
+/* Know More */
+/* END Know More */
+
+/* Job Opportunity Modals */
+.JobOpportunityModal {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	left: -150vw;
+	transition: left 0.3s;	
+}
+.JobOpportunityModalActive {
+	left: 0;	
+}
+/* END Job Opportunity Modals */

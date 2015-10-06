@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* These CSS rules will effect every page. */
+
+* {
+	box-sizing: border-box;	
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;	
+ /* Just for TESTING! */	
+	height: 5000px;
+	background-color: #6B6B6B;
+ /* Just for TESTING! */
+}
+section {
+	margin: 0;
+	width: 100%;
+	padding: 0;
+}
+a {
+	text-decoration: none;	
+}
+button:hover {
+	cursor:pointer;
+}
+
+/* General Classes */
+.HRNButton {
+	width: 200px;
+	height: 40px;
+	font-size: 14px;
+	font-weight: 300;
+	padding: 0;
+	text-transform: uppercase;
+	background-color: transparent;
+	transition: all 0.3s;
+}
+.WhiteButton {
+	color: #fff;
+	border: 1px solid #fff;	
+}
+.BlackButton {
+	color: #010101;
+	border: 1px solid #010101;	
+}
+.BlueButton {
+	color: #fff;
+	background-color: #44b3e6;
+	border: 1px solid #44b3e6;	
+}
+.HRNButton:hover {
+	color: #fff;
+	border: 1px solid #44b3e6;
+	background-color: #44b3e6;
+}
+.InvisibleHeadline {
+	position: absolute;
+	opacity: 0;
+	left: -300vw;	
+}
+/* END General Classes */
+
+/* Go to Top button */
+#GoTopImg {
+	background-color: rgba(10, 66, 113, 0.57);
+	width: 54px;
+	height: 54px;
+	bottom: 25px;
+	right: 25px;
+	text-align: center;
+	position: fixed;
+	z-index: 30;
+	transition: all 0.3s;
+}
+#GoTopImg:hover {
+	background-color: rgba(10, 66, 113, 1);
+}
+#GoTopImg .fa {
+	font-size: 30px;
+	color: #f4f4f2;
+	padding-top: 10px;
+}
+/* END Go to Top button */

@@ -1,0 +1,144 @@
+/* compiled by scssphp v0.3.0 on Fri, 02 Oct 2015 16:57:50 +0200 (0.1647s) */
+
+/* 
+ (IMAGE) PARAMS
+ =================
+ @mixin imgGlitch($name, $intensity, $width, $height, $top, $left)
+ =================
+ 1. Namespace
+ 2. Intensity
+ 3. Width (px)
+ 4. Height (px)
+ 5. Top (px, abs pos)
+ 6. Left (px, abs pos)
+ */
+@keyframes example-three-anim-1 {
+  0% {
+    clip: rect(84px, 100px, 31px, 0); }
+
+  6.66667% {
+    clip: rect(56px, 100px, 44px, 0); }
+
+  13.33333% {
+    clip: rect(96px, 100px, 56px, 0); }
+
+  20% {
+    clip: rect(41px, 100px, 53px, 0); }
+
+  26.66667% {
+    clip: rect(51px, 100px, 47px, 0); }
+
+  33.33333% {
+    clip: rect(46px, 100px, 16px, 0); }
+
+  40% {
+    clip: rect(39px, 100px, 67px, 0); }
+
+  46.66667% {
+    clip: rect(36px, 100px, 79px, 0); }
+
+  53.33333% {
+    clip: rect(76px, 100px, 71px, 0); }
+
+  60% {
+    clip: rect(32px, 100px, 85px, 0); }
+
+  66.66667% {
+    clip: rect(61px, 100px, 39px, 0); }
+
+  73.33333% {
+    clip: rect(19px, 100px, 34px, 0); }
+
+  80% {
+    clip: rect(46px, 100px, 38px, 0); }
+
+  86.66667% {
+    clip: rect(30px, 100px, 45px, 0); }
+
+  93.33333% {
+    clip: rect(35px, 100px, 91px, 0); }
+
+  100% {
+    clip: rect(4px, 100px, 52px, 0); } }
+
+@keyframes example-three-anim-2 {
+  0% {
+    clip: rect(56px, 100px, 83px, 0); }
+
+  6.66667% {
+    clip: rect(90px, 100px, 93px, 0); }
+
+  13.33333% {
+    clip: rect(32px, 100px, 61px, 0); }
+
+  20% {
+    clip: rect(10px, 100px, 34px, 0); }
+
+  26.66667% {
+    clip: rect(61px, 100px, 26px, 0); }
+
+  33.33333% {
+    clip: rect(67px, 100px, 86px, 0); }
+
+  40% {
+    clip: rect(27px, 100px, 3px, 0); }
+
+  46.66667% {
+    clip: rect(31px, 100px, 61px, 0); }
+
+  53.33333% {
+    clip: rect(45px, 100px, 68px, 0); }
+
+  60% {
+    clip: rect(50px, 100px, 80px, 0); }
+
+  66.66667% {
+    clip: rect(7px, 100px, 65px, 0); }
+
+  73.33333% {
+    clip: rect(68px, 100px, 97px, 0); }
+
+  80% {
+    clip: rect(25px, 100px, 27px, 0); }
+
+  86.66667% {
+    clip: rect(29px, 100px, 25px, 0); }
+
+  93.33333% {
+    clip: rect(22px, 100px, 34px, 0); }
+
+  100% {
+    clip: rect(74px, 100px, 99px, 0); } }
+/* 
+ (FINE TUNE) PARAMS
+ =================
+ @mixin finetuneGlitch($name, $top, $left)
+ =================
+ 1. Namespace
+ 5. Top (px, abs pos)
+ 6. Left (px, abs pos)
+ */
+.example-three > img {
+  position: absolute;
+  top: 200px;
+  left: 75px; }
+  .example-three > img:nth-child(2), .example-three > img:nth-child(3) {
+    clip: rect(0, 0, 0, 0); }
+  .example-three > img:nth-child(2) {
+    left: 77px;
+    animation: example-three-anim-1 2s infinite linear alternate-reverse; }
+  .example-three > img:nth-child(3) {
+    left: 73px;
+    animation: example-three-anim-2 3s infinite linear alternate-reverse; }
+
+body {
+  background: black;
+  font-family: Sans-serif;
+  padding: 20px; }
+
+.wrap {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative; }

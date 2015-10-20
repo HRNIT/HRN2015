@@ -1,0 +1,698 @@
+@charset "utf-8";
+/* These CSS rules will effect the Main Page. */
+
+/* Custom Menu defs for Careers page only (it is always open on desktop */
+@media (min-width: 1000px) {
+#BurgerMenu {
+	display: none;	
+}
+}
+#MobileMenuBar {
+	position: fixed;
+	top: 0;
+	width: 100%;	
+	height: 75px;
+	background-color: #000;
+	z-index: 2;
+}
+@media (max-width: 1920px) {
+	#MobileMenuBar {
+		height: 75px;	
+	}
+}
+/* END Custom Menu defs for Careers page only */
+
+
+
+/* Meet the Team */
+#MeetTheTeam {
+	margin-bottom: 3.385416vw;	
+}
+#MeetTheTeam .Headline {
+	margin-top: 7.2916vw;
+	margin-bottom: 0;	
+}
+#MeetTheTeam p {
+	margin: 0 auto;
+	font-weight: 300;	
+	text-align: center;
+	font-size: 0.83333vw;
+}
+#MeetTheTeam p span {
+	display: block;	
+}
+#HRNGrid {
+	text-align: center;
+	font-size: 0;	
+	width: 100%;
+	margin-top: 4.6875vw;
+}
+.HRNMember {
+	display: inline-block;	
+	width: 20%;
+	height: 20vw;
+	position: relative;
+	vertical-align: top;
+}
+.HRNMember img {
+	height: 20vw;	
+}
+.Overlay {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 4.322916vw;
+	padding-top: 1.04166vw;	
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.OverlayName, .OverlayTitle {
+	font-size: 1vw;
+	margin: 0;
+	color: #fff;
+	line-height: 120%;
+}
+.OverlayName {
+	text-transform: uppercase;	
+}
+.OverlayTitle {
+	font-weight: 300;
+}
+@media (max-width: 1920px) {
+#MeetTheTeam {
+	margin-bottom: 65px;	
+}
+#MeetTheTeam .Headline {
+	margin-top: 140px;
+}
+#MeetTheTeam p {
+	font-size: 16px;
+}
+#HRNGrid {
+	margin-top: 90px;
+}
+}
+@media (max-width: 1000px) {
+#MeetTheTeam {
+	margin-bottom: 28px;	
+}
+#MeetTheTeam .Headline {
+	margin-top: 105px;	
+	margin-bottom: 20px;
+}
+#MeetTheTeam p {
+	padding-left: 75px;
+	padding-right: 75px;
+}
+#MeetTheTeam p span {
+	display: inline;	
+}
+#HRNGrid {
+	margin-top: 75px;
+}
+.HRNMember {
+	width: 50%;
+	height: 50vw;
+}
+.HRNMember img {
+	height: 50vw;	
+}
+.Overlay {
+	height: 10.80729vw;
+	padding-top: 2.60416vw;	
+}
+.OverlayName, .OverlayTitle {
+	font-size: 2.5vw;
+}
+#HRNSzenderJ,
+#HRNBarbelyV,
+#HRNLilonA,
+#HRNSzaboK,
+#HRNKaczmarczykP,
+#HRNBottyanT,
+#HRNYepezA,
+#HRNNagyB,
+#HRNBawaS,
+#HRNDragusA,
+#HRNOlahJ {
+	display: none;	
+}
+}
+@media (max-width: 640px) {
+#MeetTheTeam {
+	margin-bottom: 65px;	
+}
+#MeetTheTeam .Headline {
+	margin-top: 150px;	
+	margin-bottom: 20px;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+#MeetTheTeam p {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.HRNMember {
+	width: 100%;
+	height: 100vw;
+}
+.HRNMember img {
+	height: 100vw;	
+}
+.Overlay {
+	height: 25.9375vw;
+	padding-top: 6.25vw;	
+}
+.OverlayName, .OverlayTitle {
+	font-size: 6vw;
+}
+#HRNSzenderJ {
+	display: inline-block;	
+}
+}
+/* END Meet the Team */
+
+/* Careers */
+#Careers {
+	width: 100%;
+	max-width: 46.35416vw;
+	margin: 0 auto;
+	text-align: center;
+}
+#Careers h3 {
+	font-size: 0.83333vw;
+	font-weight: 300;
+	line-height: 0.995833vw;	
+	color: #424242;
+	margin-top: 0.260416vw;
+	margin-bottom: 5.208333vw;
+}
+#JobsGrid {
+	margin-bottom: 2.08333vw;
+}
+.Job {
+	display: inline-block;	
+	width: 33%;
+	padding-right: 2.60416vw;
+	vertical-align: top;
+	min-height: 9.375vw;
+	margin-bottom: 1.04166vw;
+	text-align: left;
+}
+.Job:hover {
+	cursor: pointer;	
+}
+.Job:hover .JobName, .Job:hover .JobLocation {
+	color: #5bcbf5;
+}
+.JobName, .JobLocation, .JobText {
+	font-size: 0.72916vw;
+	color: #424242;	
+	margin: 0;
+	transition: color 0.3s;
+}
+.JobName, .JobLocation {
+	text-transform: uppercase;	
+}
+.JobName {
+	font-weight: 700;	
+}
+.JobLocation {
+	font-weight: 400;	
+}
+.JobText {
+	font-weight: 300;	
+	margin-top: 0.520833vw;
+	line-height: 0.875vw;
+}
+@media (max-width: 1920px) {
+#Careers {
+	max-width: 890px;
+}
+#Careers h3 {
+	font-size: 16px;
+	line-height: 19.12px;	
+	margin-top: 5px;
+	margin-bottom: 100px;
+}
+#JobsGrid {
+	margin-bottom: 40px;
+}
+.Job {
+	padding-right: 50px;
+	min-height: 180px;
+	margin-bottom: 20px;
+}
+.JobName, .JobLocation, .JobText {
+	font-size: 14px;
+}
+.JobText {
+	margin-top: 10px;
+	line-height: 16.8px;
+}	
+}
+@media (max-width: 1000px) {
+#Careers h3 {
+	margin-top: 25px;
+	margin-bottom: 70px;
+	padding-left: 75px;
+	padding-right: 75px;
+}
+#JobsGrid {
+	margin-bottom: 55px;
+}
+.Job {
+	width: 250px;
+	padding-right: 0;
+	min-height: 180px;
+	margin: 0 20px;	
+	margin-bottom: 10px;
+}	
+}
+@media (max-width: 640px) {
+#Careers h3 {
+	padding-left: 20px;
+	padding-right: 20px;	
+	margin-top: 60px;
+	margin-bottom: 75px;
+}
+#JobsGrid {
+	margin-bottom: 40px;
+	text-align: left;
+}
+.Job {
+	width: 100%;
+	min-height: auto;
+	margin: 0;
+	padding: 0 50px 0 20px;
+	margin-bottom: 30px;
+}
+}
+/* END Careers */
+
+/* Testimonial */
+#Testimonial {
+	text-align: center;	
+	padding-bottom: 3.645833vw;
+}
+#QuoteSign {
+	width: 2.08333vw;
+}
+#Testimonial p {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 1.302083vw;
+	margin-bottom: 1.822916vw;
+	font-size: 1.25vw;
+	line-height: 1.5vw;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #333333;
+}
+#TestimonialLogo {
+	width: 6.822916vw;
+}
+@media (max-width: 1920px) {
+#Testimonial {
+	padding-bottom: 70px;
+}
+#QuoteSign {
+	width: 40px;
+}
+#Testimonial p {
+	margin-top: 25px;
+	margin-bottom: 35px;
+	font-size: 24px;
+	line-height: 28.8px;
+}
+#TestimonialLogo {
+	width: 131px;
+}	
+}
+@media (max-width: 1000px) {
+#Testimonial {
+	padding-bottom: 75px;
+}
+#Testimonial p {
+	max-width: 290px;
+	margin-bottom: 30px;
+}
+}
+/* END Testimonial */
+
+/* Want to Know More */
+#WantToKnowMore {
+	background-color: #eeeeee;	
+	text-align: center;
+	font-size: 0;
+	padding-top: 1.822916vw;
+	padding-bottom: 1.822916vw;
+}
+#WantToKnowMore h2 {
+	display: inline;	
+	font-size: 1.25vw;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-right: 3.125vw;
+}
+#ButtonsContainer {
+	display: inline-block;	
+}
+#ButtonsContainer .HRNButton {
+	margin: 0 0.572916vw;	
+}
+#ActiveHRNButton {
+	background-color: #44b3e6;	
+	border: 1px solid #44b3e6;
+	color: #fff;
+}
+@media (max-width: 1920px) {
+#WantToKnowMore {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+#WantToKnowMore h2 {
+	font-size: 24px;
+	margin-right: 60px;
+}
+#ButtonsContainer .HRNButton {
+	margin: 0 11px;	
+}	
+}
+@media (max-width: 1700px) {
+#WantToKnowMore h2 {
+	display: block;	
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+#ButtonsContainer {
+	display: block;	
+}
+}
+@media (max-width: 1350px) {
+#WantToKnowMore {
+	padding-bottom: 25px;
+}
+#WantToKnowMore h2 {
+	margin-bottom: 20px;	
+}
+#ButtonsContainer {
+	max-width: 800px;
+	margin: 0 auto;
+}
+#ButtonsContainer .HRNButton {
+	margin: 11px;	
+}	
+}
+@media (max-width: 640px) {
+#ButtonsContainer .HRNButton {
+	margin: 10px;	
+}	
+}
+/* END Want to Know More */
+
+/* Job Opportunity Modals */
+
+/*
+If you want absolute modal position:
+.JobOpportunityModalBg {
+	width: 100vw;
+	height: 200vh;
+	background-color: rgba(0, 0, 0, 0);	
+	right: -150vw;
+	transition: background-color 0.3s;
+}
+.JobOpportunityModalBgActive {
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.8);	
+}*/
+.JobOpportunityModalContainer {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	right: -150vw;
+	z-index: 2000;
+	transition: right 0.3s;	
+}
+.JobOpportunityModalActive {
+	right: 0;	
+}
+.JobOpportunityModal {
+	background-color: #fff;
+	height: 100vh;	
+	padding-top: 3.645833vw;
+	padding-left: 11.97916vw;
+	color: #424242;
+	overflow-y: scroll;
+}
+.JobModalHRNLogo {
+	position: relative;
+	top: -1.5625vw;
+	width: 5.104166vw;
+}
+.ModalJobName {
+	text-transform: uppercase;
+	color: #44b3e6;
+	font-size: 2.5vw;
+	line-height: 3vw;
+	font-weight: 900;
+	margin-top: 0;
+	position: relative;
+}
+.JobOpportunityModalClose {
+	font-size: 3.125vw;
+	color: #000;
+	position: absolute;
+	top: 0;
+	right: 13.020833vw;
+	font-weight: 400;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+.JobOpportunityModalClose:hover {
+	color: #e53a35;	
+}
+.ModalJobIntro, .Compensations {
+	font-size: 0.83333vw;
+	line-height: 1vw;
+	font-weight: 300;	
+}
+.ModalJobIntro {
+	width: 100%;
+	max-width: 46.875vw;
+}
+.HeadlineRequired, .HeadlinePreferred {
+	font-size: 0.72916vw;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 0;	
+}
+.HeadlineRequired {
+	color: #e53a35; 	
+}
+.HeadlinePreferred {
+	color: #44b3e6;
+}
+.ListRequired, .ListPreferred {
+	font-size: 0.729166vw;
+	font-weight: 300;	
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	line-height: 0.875vw;
+}
+.ListRequired li:before, .ListPreferred li:before {
+	content:"•";
+	margin-right: 0.72916vw;
+}
+.Compensations {
+	font-size: 0.72916vw;
+	font-weight: 300;	
+}
+.HeadlineShareOpportunity {
+	font-size: 0.83333vw;
+	margin-top: 3.90625vw;
+	margin-bottom: 1.302083vw;
+	line-height: 1vw;
+}
+.ModalButtonsContainer {
+	font-size: 0;
+	margin-bottom: 5.20833vw;	
+}
+.ModalApplyButton {
+	margin-right: 2.34375vw;
+}
+.ModalShareButton {
+	z-index: 9999;	
+}
+.ModalShareIconsContainer {
+	display: inline-block;
+	vertical-align: top;
+}
+.ModalShareIcons {
+	display: -moz-flex; display: -webkit-flex; display: flex;
+	-moz-flex-direction: row; -webkit-flex-direction: row; flex-direction: row;
+	font-size: 0;
+}
+.ModalShareIcon {
+	font-size: 0.9375vw;
+	width: 2.0833vw;
+	height: 2.0833vw;
+	margin: 0;
+	text-align: center;
+	color: #fff;
+	display: -moz-flex; display: -webkit-flex; display: flex;
+	-moz-align-items: center; -webkit-align-items: center; align-items: center;
+	-moz-justify-content: center; -webkit-justify-content: center; justify-content: center;
+}
+.ModalTwitterIcon {
+	background-color: #64bcdf;
+}
+.ModalFacebookIcon {
+	background-color: #507cae;
+}
+.ModalGooglePlusIcon {
+	background-color: #4e4e54;
+}
+.ModalLinkedInIcon {
+	background-color: #81b9cb;
+}
+@media (max-width: 1920px) {
+.JobOpportunityModal {
+	padding-top: 70px;
+	padding-left: 230px;
+}
+.JobModalHRNLogo {
+	top: -30px;
+	width: 98px;
+}
+.JobOpportunityModalClose {
+	font-size: 60px;
+	right: 250px;
+}
+.ModalJobName {
+	font-size: 48px;
+	line-height: 57.6px;
+}
+.ModalJobIntro, .Compensations {
+	font-size: 16px;
+	line-height: 19.2px;
+}
+.ModalJobIntro {
+	max-width: 900px;
+}
+.HeadlineRequired, .HeadlinePreferred {
+	font-size: 14px;
+}
+.ListRequired, .ListPreferred {
+	font-size: 14px;
+	line-height: 16.8px;
+}
+.ListRequired li:before, .ListPreferred li:before {
+	margin-right: 14px;
+}
+.Compensations {
+	font-size: 14px;
+}
+.HeadlineShareOpportunity {
+	font-size: 16px;
+	margin-top: 75px;
+	margin-bottom: 25px;
+	line-height: 19.2px;
+}
+.ModalButtonsContainer {
+	margin-bottom: 100px;	
+}
+.ModalApplyButton {
+	margin-right: 45px;
+}
+.ModalShareIcon {
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+}	
+}
+@media (max-width: 1400px) {
+.JobOpportunityModal {
+	padding: 70px 75px;
+}
+.JobOpportunityModalClose {
+	top: -75px;
+	right: -40px;
+}
+.ModalJobName {
+	font-size: 36px;
+	margin-bottom: 20px;
+	line-height: 40px;
+}
+.ModalJobIntro {
+	margin-bottom: 40px;
+}
+.HeadlineShareOpportunity {
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+.ModalApplyButton {
+	display: block;
+	margin-bottom: 18px;
+}
+.ModalButtonsContainer {
+	margin-bottom: 37px;	
+}
+}
+
+@media (min-width: 640px){
+.ModalShareButton {
+	z-index: 9999;	
+	position: relative;
+}
+
+.ModalShareButton:hover + .ModalShareIconsContainer {
+      margin-left: 0;
+	  transition:all 0.3s;
+	  transition-delay: 0;
+	
+}
+
+.ModalShareIconsContainer {
+	display: inline-block;
+	vertical-align: top;
+    position: relative;
+    margin-left: -190px;
+	transition:all 0.3s;
+	transition-delay: 0.2s;
+	
+}
+
+.ModalShareIconsContainer:hover {
+	margin-left: 0;
+}	
+	
+}
+
+@media (max-width: 640px) {
+.JobOpportunityModal {
+	padding: 70px 20px;
+}
+.JobOpportunityModalClose {
+	right: 30px;
+	font-weight: 300;
+}
+.ModalJobName {
+	font-size: 36px;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+.ModalJobIntro {
+	margin-bottom: 30px;
+}
+.HeadlineShareOpportunity {
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+#ApplyJobModal {
+	top: 0;	
+}
+}
+/* END Job Opportunity Modals */

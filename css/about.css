@@ -1,0 +1,342 @@
+@charset "utf-8";
+/* These CSS rules will effect the Main Page. */
+
+/* Header */
+header {
+	background-image: url(../img/about/about-bg-desktop.jpg);
+	background-size: cover;
+	background-position: center;
+	padding-top: 345px;
+	height: 796px;	
+}
+#AboutUsGlitchContainer {
+	width: 673px;
+	margin: 0 auto;
+}
+@media (max-width: 1000px) {
+header {
+	background-image: url(../img/about/about-bg-tablet.jpg);
+	background-size: cover;
+	background-position: center;
+	padding-top: 218px;
+	height: 477px;	
+}
+#AboutUsGlitchContainer {
+	width: 275px;
+}	
+}
+/* END Header */
+
+/* About Us */
+#AboutUs {
+	background-color: #eeeeee;
+}
+#AboutUsInnerContainer {
+	width: 100%;
+	max-width: 895px;
+	margin: 0 auto;
+	padding-top: 55px;
+	padding-bottom: 37px;
+}
+#AboutUs h2, #AboutUs p {
+	margin: 0;
+	font-weight: 300;
+	text-align: center;	
+}
+#AboutUs h2 {
+	width: 100%;
+	max-width: 735px;
+	margin: 0 auto;
+	margin-bottom: 53px;
+	font-size: 24px;
+	line-height: 28.8px;	
+}
+#AboutUs p {
+	font-size: 16px;
+	line-height: 19.14px;	
+	margin-top: 20px;
+}
+@media (max-width: 1000px) {
+#AboutUsInnerContainer {
+	max-width: 100%;
+	padding-left: 77px;
+	padding-right: 77px;
+	padding-top: 30px;
+	padding-bottom: 70px;
+}
+#AboutUs h2 {
+	margin-bottom: 37px;
+}
+#AboutUs p {
+	margin-top: 20px;
+}
+}
+@media (max-width: 640px) {
+#AboutUsInnerContainer {
+	padding-left: 20px;
+	padding-right: 20px;
+}	
+}
+/* END About Us */
+
+/* Leadership Team */
+#LeadershipTeam {
+	margin-bottom: 3.90625vw;	
+}
+#LeadershipTeam .Headline {
+	margin-top: 3.385416vw;
+	margin-bottom: 3.385416vw;	
+}
+#HRNGrid {
+	text-align: center;
+	font-size: 0;	
+	width: 100%;
+}
+.HRNMember {
+	display: inline-block;	
+	width: 20%;
+	height: 20vw;
+	position: relative;
+	vertical-align: top;
+}
+.HRNMember img {
+	width: 100%;
+	height: 20vw;	
+}
+.Overlay {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 4.322916vw;
+	padding-top: 1.04166vw;	
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.OverlayName, .OverlayTitle {
+	font-size: 1vw;
+	margin: 0;
+	color: #fff;
+	line-height: 120%;
+}
+.OverlayName {
+	text-transform: uppercase;	
+}
+.OverlayTitle {
+	font-weight: 300;
+}
+@media (max-width: 1920px) {
+#LeadershipTeam {
+	margin-bottom: 75px;	
+}
+#LeadershipTeam .Headline {
+	margin-top: 65px;
+	margin-bottom: 65px;	
+}
+.HRNMember {
+	width: 383px;
+	height: 383px;
+}
+.HRNMember img {
+	height: 383px;	
+}
+.Overlay {
+	height: 83px;
+	padding-top: 20px;	
+}
+.OverlayName, .OverlayTitle {
+	font-size: 19.2px;
+}
+}
+@media (max-width: 1550px) {
+.HRNMember {
+	width: 25%;
+	height: 25vw;
+}
+.HRNMember img {
+	height: 25vw;	
+}
+.Overlay {
+	height: 5.354838vw;
+	padding-top: 1.290322vw;	
+}
+.OverlayName, .OverlayTitle {
+	font-size: 1.238709vw;
+}	
+}
+@media (max-width: 1000px) {
+#LeadershipTeam .Headline {
+	margin-top: 27px;
+	margin-bottom: 27px;	
+}
+.HRNMember {
+	width: 50%;
+	height: 50vw;
+}
+.HRNMember img {
+	height: 50vw;	
+}
+.Overlay {
+	height: 10.807291vw;
+	padding-top: 2.60416vw;	
+}
+.OverlayName, .OverlayTitle {
+	font-size: 2.5vw;
+}	
+}
+@media (max-width: 640px) {
+#LeadershipTeam .Headline {
+	margin-top: 65px;
+	margin-bottom: 65px;
+	letter-spacing: -1px;	
+}
+.HRNMember {
+	width: 100%;
+	height: 100vw;
+}
+.HRNMember img {
+	height: 100vw;	
+}
+.Overlay {
+	height: 25.9375vw;
+	padding-top: 6.25vw;	
+}
+.OverlayName, .OverlayTitle {
+	font-size: 6vw;
+}	
+}
+/* END Leadership Team */
+
+/* Testimonial */
+#Testimonial {
+	text-align: center;	
+	padding-bottom: 1.5625vw;
+}
+#QuoteSign {
+	width: 2.08333vw;
+}
+#Testimonial p {
+	width: 100%;
+	max-width: 44.79166vw;
+	margin: 0 auto;
+	margin-top: 1.302083vw;
+	margin-bottom: 1.302083vw;
+	font-size: 1.25vw;
+	line-height: 1.5vw;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #333333;
+}
+#TestimonialLogo {
+	width: 4.79166vw;
+}
+@media (max-width: 1920px) {
+#Testimonial {
+	padding-bottom: 30px;
+}
+#QuoteSign {
+	width: 40px;
+}
+#Testimonial p {
+	max-width: 860px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-size: 24px;
+	line-height: 28.8px;
+}
+#TestimonialLogo {
+	width: 92px;
+}	
+}
+@media (max-width: 1000px) {
+#Testimonial {
+	padding-bottom: 65px;
+}
+#Testimonial p {
+	padding-left: 75px;
+	padding-right: 75px;	
+	margin-bottom: 60px;
+}
+}
+@media (max-width: 640px) {
+#Testimonial {
+	padding-bottom: 65px;
+}
+#Testimonial p {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 30px;	
+	margin-bottom: 25px;
+}	
+}
+/* END Testimonial */
+
+/* Want to Know More */
+#WantToKnowMore {
+	background-color: #eeeeee;	
+	text-align: center;
+	font-size: 0;
+	padding-top: 1.822916vw;
+	padding-bottom: 1.822916vw;
+}
+#WantToKnowMore h2 {
+	display: inline;	
+	font-size: 1.25vw;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-right: 3.125vw;
+}
+#ButtonsContainer {
+	display: inline-block;	
+}
+#ButtonsContainer .HRNButton {
+	margin: 0 0.572916vw;	
+}
+#ActiveHRNButton {
+	background-color: #44b3e6;	
+	border: 1px solid #44b3e6;
+	color: #fff;
+}
+@media (max-width: 1920px) {
+#WantToKnowMore {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+#WantToKnowMore h2 {
+	font-size: 24px;
+	margin-right: 60px;
+}
+#ButtonsContainer .HRNButton {
+	margin: 0 11px;	
+}	
+}
+@media (max-width: 1700px) {
+#WantToKnowMore h2 {
+	display: block;	
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+#ButtonsContainer {
+	display: block;	
+}
+}
+@media (max-width: 1350px) {
+#WantToKnowMore {
+	padding-bottom: 25px;
+}
+#WantToKnowMore h2 {
+	margin-bottom: 20px;	
+}
+#ButtonsContainer {
+	max-width: 800px;
+	margin: 0 auto;
+}
+#ButtonsContainer .HRNButton {
+	margin: 11px;	
+}	
+}
+@media (max-width: 640px) {
+#ButtonsContainer .HRNButton {
+	margin: 10px;	
+}	
+}
+/* END Want to Know More */

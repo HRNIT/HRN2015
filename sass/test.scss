@@ -1,0 +1,102 @@
+@mixin imgGlitch($name, $intensity, $width, $height) {
+  
+  $steps: $intensity;
+
+    // We need two different ones
+    @for $i from 1 through 2 {
+      @keyframes #{$name}-anim-#{$i} {
+        @for $i from 0 through $steps {
+          #{percentage($i*(1/$steps))} {
+            clip: rect(
+              random($height)+px,
+              $width+px,
+              random($height)+px,
+              0
+            );
+          }
+        }
+      }
+    }
+
+  
+
+}
+
+@mixin fineTuneGlitch($name, $top, $left) {
+  
+   > img {
+    /*position: absolute;*/
+    top: $top+px;
+    left: $left+px;
+  }
+  
+  > img:nth-child(2),
+  > img:nth-child(3){
+    clip: rect(0, 0, 0, 0); 
+  }
+  > img:nth-child(2) {
+    left: ($left + 2) + px;
+    animation: #{$name}-anim-1 2s infinite linear alternate-reverse;
+
+  }
+  > img:nth-child(3) {
+    left: ($left - 2) + px;
+    animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
+
+  }
+}
+
+
+/* 
+  (IMAGE) PARAMS
+  =================
+  @mixin imgGlitch($name, $intensity, $width, $height)
+  =================
+  1. Namespace
+  2. Intensity
+  3. Width (px)
+  4. Height (px)
+  5. Top (px, abs pos)
+  6. Left (px, abs pos)
+*/
+@include imgGlitch("HRNLogo", 15, 120, 29); /*100 100*/
+@include imgGlitch("GlitchTwo", 15, 595, 160);
+@include imgGlitch("GlitchThree", 15, 123, 58);
+@include imgGlitch("GlitchFour", 15, 201, 49);
+@include imgGlitch("GlitchFive", 15, 200, 33);
+@include imgGlitch("GlitchSix", 18, 663, 90);
+
+/* 
+  (FINE TUNE) PARAMS
+  =================
+  @mixin finetuneGlitch($name, $top, $left)
+  =================
+  1. Namespace
+  5. Top (px, abs pos)
+  6. Left (px, abs pos)
+*/
+.HeaderLogoGlitch {
+  @include fineTuneGlitch("HRNLogo", 0, 0); /*22 60*/
+}
+
+.HeaderTextGlitch{
+	@include fineTuneGlitch("GlitchTwo", 0, 0);
+}
+
+.FooterGlitch{
+	@include fineTuneGlitch("GlitchThree", 0, 0);
+}
+
+.ParisHeaderGlitch{
+	@include fineTuneGlitch("GlitchFour", 0, 0);
+}
+
+
+.LondonHeaderGlitch{
+	@include fineTuneGlitch("GlitchFive", 0, 0);
+}
+
+.AboutusGlitch {
+	@include fineTuneGlitch("GlitchSix", 0, 0);
+}
+

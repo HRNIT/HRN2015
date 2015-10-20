@@ -1,0 +1,841 @@
+@charset "utf-8";
+/* These CSS rules will effect the Main Page. */
+
+/* Header */
+header {
+	background-image: url(../img/mainpage/header/header-bg-desktop.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 55.729166vw;
+	color: #fff;
+	position: relative;
+	text-align: center;
+}
+#HeaderInnerContainer {
+	width: 100%;
+	max-width: 30.989583vw;
+	margin: 0 auto;	
+	padding-top: 21.875vw;
+}
+#HeaderInnerContainer h2 {
+	margin-top: 10.4166vw;
+}
+#HeaderInnerContainer h2 span {
+	font-size: 0.833333vw;
+	font-weight: 300;	
+	color: #fff;
+	padding-right: 0.520833vw;
+}
+#HeaderTestimonial {
+	margin-top: 5.46875vw;	
+}
+#HeaderQuote {
+	width: 100%;
+	max-width: 21.354166vw;
+	font-size: 0.8854166vw;
+	font-weight: 600;
+	text-align: center;	
+	text-transform: uppercase;
+	margin: 0 auto;
+	margin-bottom: 1.04166vw;
+	line-height: 120%;
+}
+#QuoteSign {
+	width: 1.770833vw;
+}
+#QuoteAuthor {
+	margin: 0;
+	font-size: 0.729166vw;
+	line-height: 120%;
+	font-weight: 300;
+}
+#WSJLogo {
+	margin-top: 0.520833vw;
+	width: 2.604166vw;
+	height: 1.40625vw;
+}
+#QuoteAuthor span {
+	position: relative;
+	top: -0.4166vw;
+	left: 0.52083vw;	
+}
+header .fa-angle-down {
+	font-size: 2.604166vw;	
+	font-weight: 600;
+	margin-top: 2.08333vw;
+}
+@media (max-width: 1920px) {
+header {
+	height: 1070px;
+}
+#HeaderInnerContainer {
+	max-width: 595px;
+	padding-top: 420px;
+}
+#HeaderInnerContainer h2 {
+	margin-top: 200px;
+}
+#HeaderInnerContainer h2 span {
+	font-size: 16px;
+	padding-right: 10px;
+}
+#HeaderTestimonial {
+	margin-top: 105px;	
+}
+#HeaderQuote {
+	max-width: 410px;
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+#QuoteSign {
+	width: 34px;
+}
+#QuoteAuthor {
+	font-size: 14px;
+}
+#WSJLogo {
+	margin-top: 10px;
+	width: 50px;
+	height: 27px;
+}
+#QuoteAuthor span {
+	top: -8px;
+	left: 10px;	
+}
+header .fa-angle-down {
+	font-size: 50px;	
+	margin-top: 40px;
+}	
+}
+@media (max-width: 768px) {
+header {
+	background-image: url(../img/mainpage/header/header-bg-tablet.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 478px;
+}
+#HeaderInnerContainer {
+	max-width: 275px;
+	padding-top: 135px;
+}
+#HeaderInnerContainer h2 {
+	margin-top: 100px;
+}
+#HeaderInnerContainer h2 span {
+	font-size: 16px;
+	padding-right: 0;
+}
+#HeaderInnerContainer .HRNButton {
+	margin-top: 15px;	
+}
+#HeaderTestimonial {
+	display: none;	
+}
+header .fa-angle-down {
+	margin-top: 65px;
+}
+}
+/* END Header */
+
+/* Events */
+#Events {
+	font-size: 0;
+}
+#ParisEvent, #LondonEvent {
+	display: inline-block;
+	width: 50%;	
+	height: 35.9375vw;
+	vertical-align: top;
+}
+#ParisLogo, #LondonLogo {
+	transition: all 0.3s;	
+}
+.EventInnerContainer {
+	width: 100%;
+	height: 100%;	
+	padding-top: 10.677083vw;
+	position: relative;
+}
+.EventLogoContainer {
+	width: 100%;
+	max-width: 11.25vw;	
+	margin: 0 auto;
+	text-align: center;
+}
+.EventLogoContainer h3 {
+	font-family: 'proxima-nova', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	color: #fff;
+	margin-top: 1.04166vw;		
+}
+#Events .GlitchContainer {
+	width: 10.4166vw;
+	margin: 0 auto;
+}
+#ParisEvent {
+	background-image: url(../img/mainpage/events/paris-bg-desktop.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;	
+}
+#ParisEvent .EventInnerContainer {
+	background-color: rgba(38, 198, 218, 0.9);	
+}
+#ParisEvent:hover #ParisLogo {
+	-moz-transform: scale(1.2,1.2);
+	-webkit-transform: scale(1.2,1.2);
+	transform: scale(1.2,1.2);
+}
+#ParisEvent h3 {
+	font-size: 1.04166vw;
+}
+#ParisEvent .HRNButton {
+	margin-top: 3.125vw;	
+}
+#ParisEvent .HRNButton:hover {
+	background-color: #fff;
+	border: 1px solid #fff;
+	color: 	rgb(38, 198, 218);
+}
+/*Eiffel Tower*/
+#EiffelTower {
+	width: 5.20833vw;
+	height: 5.20833vw;
+	position: absolute;
+	bottom: 1.145833vw;
+	right: 2.8645833vw;
+}
+
+
+.EiffelClass{
+	margin: 0 auto;
+}
+.EiffelPart{
+	transition: all 0.4s;
+}
+#EiffelPartOne{
+	width:9.5px;
+}
+#EiffelPartTwo{
+	width:18.8px;
+}
+
+#EiffelPartTwo img {
+margin: 0px 0 -1px 0px;
+    width: 6px;	
+}
+#EiffelPartThree{
+	width:13.1px;
+}
+#EiffelPartFour{
+	width:9px;
+}
+
+#EiffelPartFour img {
+margin: -2px 0 0 0;	
+}
+
+#EiffelPartFive{
+	width:28.2px;
+}
+#EiffelPartSix{
+	width:28px;
+}
+#EiffelPartSeven{
+	width:43px;
+}
+
+#EiffelPartEight{
+	width:51px;
+}
+
+/*End Eiffel Tower*/
+#LondonEvent {
+	background-image: url(../img/mainpage/events/london-bg-desktop.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;		
+}
+#LondonEvent .EventInnerContainer {
+	background-color: rgba(128, 182, 5, 0.9);	
+}
+#LondonEvent:hover #LondonLogo {
+	-moz-transform: scale(1.2,1.2);
+	-webkit-transform: scale(1.2,1.2);
+	transform: scale(1.2,1.2);
+}
+#LondonEvent h3 {
+	font-size: 1.197916vw;	
+}
+#LondonEvent .HRNButton {
+	margin-top: 2.34375vw;	
+}
+#LondonEvent .HRNButton:hover {
+	background-color: #fff;
+	border: 1px solid #fff;
+	color: 	rgb(128, 182, 5);
+}
+/*Big Ben*/
+#BigBen {
+	width: 5.208333vw;
+	height: 5.208333vw;
+	
+	position: absolute;
+	bottom: 1.145833vw;
+	left: 2.864583vw;
+}
+
+.BigBenClass{
+	margin: 0 auto;
+	
+}
+.BigBenPart{
+	transition: all 0.4s;
+}
+#BigBenPartOne{
+	width:1.3px;
+}
+
+#BigBenPartOne img {
+    margin: 0 -1px;	
+}
+
+#BigBenPartTwo{
+	width:7.3px;
+}
+#BigBenPartThree{
+	width:22.6px;
+}
+#BigBenPartFour{
+	width:14.7px;
+}
+#BigBenPartFive{
+	width:20.5px;
+}
+#BigBenPartSix{
+	width:13.5px;
+}
+
+#BigBenPartSix img {
+margin: -2px -1px;	
+}
+/*End Big Ben*/
+@media (max-width: 1920px) {
+#ParisEvent, #LondonEvent {
+	height: 690px;
+}
+.EventInnerContainer {
+	padding-top: 205px;
+}
+.EventLogoContainer {
+	max-width: 216px;	
+}
+.EventLogoContainer h3 {
+	margin-top: 20px;		
+}
+#Events .GlitchContainer {
+	width: 200px;
+}
+#ParisEvent h3 {
+	font-size: 20px;
+}
+#ParisEvent .HRNButton {
+	margin-top: 60px;	
+}
+#EiffelTower {
+	width: 46px;
+	height: 100px;
+	bottom: 22px;
+	right: 37px;
+}
+#LondonEvent h3 {
+	font-size: 23px;	
+}
+#LondonEvent .HRNButton {
+	margin-top: 45px;	
+}
+#BigBen {
+	width: 26px;
+	height: 100px;
+	
+	position: absolute;
+	bottom: 22px;
+	left: 39px;
+}	
+}
+@media (max-width: 768px) {
+#ParisEvent, #LondonEvent {
+	height: 478px;
+}
+.EventInnerContainer {
+	padding-top: 83px;
+}	
+#ParisEvent {
+	background-image: url(../img/mainpage/events/paris-bg-tablet.jpg);
+}
+#LondonEvent {
+	background-image: url(../img/mainpage/events/london-bg-tablet.jpg);		
+}
+#LondonEvent h3 {
+	margin-top: 30px;	
+}
+#BigBen, #EiffelTower {
+	display: none;	
+}
+}
+@media (max-width: 640px) {
+#ParisEvent, #LondonEvent {
+	width: 100%;
+	display: block;
+}
+#ParisEvent:hover #ParisLogo, #LondonEvent:hover #LondonLogo {
+	-moz-transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	transform: scale(1,1);
+}	
+}
+/* END Events */
+
+/* Speakers */
+#Speakers {
+	text-align: center;	
+}
+#Speakers .Headline {
+	margin: 3.385416vw 0;	
+}
+#SpeakersContainer {
+	width: 100%;	
+}
+#SpeakersGrid {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;	
+	font-size: 0;
+	text-align: center;
+}
+.Speaker {
+	width: 20%;	
+	display: inline-block;
+	vertical-align: top;
+}
+.SpeakersImageContainer {
+	position: relative;	
+	overflow: hidden;
+}
+.SpeakersImageContainer img {
+	width: 100%;
+	height: 20vw;
+	border: none;
+	overflow: hidden;
+}
+.SpeakerOverlay {
+	width: 100%;
+	height: 4.322916vw;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;	
+	bottom: 0;
+	text-align: center;
+	color: #fff;
+	padding-top: 0.6770833vw;
+}
+.SpeakerOverlayName, .SpeakerOverlayTitle, .SpeakerOverlayCompany {
+	margin: 0;	
+	font-size: 0.83333vw;
+	line-height: 120%;
+}
+.SpeakerOverlayName {
+	font-weight: 600;
+	text-transform: uppercase;	
+}
+.SpeakerOverlayTitle, .SpeakerOverlayCompany {
+	font-weight: 300;	
+}
+.sliphover-overlay {
+	padding: 1.04166vw;	
+	/*width: 99% !important;*/
+	background-color: #44b3e6 !important;
+}
+.SpeakerName, .SpeakerJobtitle, .SpeakerCompany, .SpeakerInfo {
+	margin: 0;	
+	font-size: 0.833333vw;
+	line-height: 125%;
+}
+.SpeakerName {
+	text-transform: uppercase;	
+	font-weight: 600;
+}
+.SpeakerJobtitle, .SpeakerCompany, .SpeakerInfo {
+	font-weight: 300;	
+}
+.SpeakerInfo {
+	margin-top: 1.04166vw;
+	line-height: 1vw;	
+}
+.SpeakerSocialIconContainer {
+	position: absolute;
+	bottom: 1.5625vw;
+	display: -moz-flex; display: -webkit-flex; display: flex;
+	-moz-flex-direction: row; -webkit-flex-direction: row; flex-direction: row;
+}
+.SpeakerSocialIcon {
+	font-size: 1.145833vw;
+	width: 2.08333vw;
+	height: 2.08333vw;
+	margin: 0 0.4166vw;
+	text-align: center;
+	background-color: transparent;	
+	color: #fff;
+	display: -moz-flex; display: -webkit-flex; display: flex;
+	-moz-align-items: center; -webkit-align-items: center; align-items: center;
+	-moz-justify-content: center; -webkit-justify-content: center; justify-content: center;
+	transition: background-color 0.3s;
+}
+.SpeakerTwitterIcon:hover {
+	background-color: #64bcdf;
+}
+.SpeakerFacebookIcon:hover {
+	background-color: #507cae;
+}
+.SpeakerGooglePlusIcon:hover {
+	background-color: #4e4e54;
+}
+.SpeakerLinkedInIcon:hover {
+	background-color: #81b9cb;
+}
+#Speakers .HRNButton {
+	margin: 1.9270833vw 0;	
+}
+@media (max-width: 1920px) {
+#Speakers .Headline {
+	margin: 65px 0;	
+}
+/*
+.sliphover-overlay {
+	width: 99% !important;
+}*/
+#Speakers .HRNButton {
+	margin: 37px 0;	
+}	
+}
+@media (max-width: 1200px) {
+#Speakers .Headline {
+	margin: 65px 0;	
+}
+.Speaker {
+	width: 25%;	
+}
+.SpeakersImageContainer img {
+	height: 25vw;
+}
+.SpeakerOverlay {
+	height: 5.1875vw;
+	padding-top: 0.8125vw;
+}
+.SpeakerOverlayName, .SpeakerOverlayTitle, .SpeakerOverlayCompany {
+	font-size: 1vw;
+}
+.sliphover-overlay {
+	padding: 1.25vw;	
+	/*width: 100% !important;*/
+}
+.SpeakerName, .SpeakerJobtitle, .SpeakerCompany, .SpeakerInfo {
+	font-size: 1vw;
+}
+.SpeakerInfo {
+	margin-top: 1.25vw;
+	line-height: 1.2vw;	
+}
+.SpeakerSocialIconContainer {
+	bottom: 1.875vw;
+}
+.SpeakerSocialIcon {
+	font-size: 1.375vw;
+	width: 2.5vw;
+	height: 2.5vw;
+	margin: 0 0.5vw;
+}
+}
+/* 
+If you would like to display 3-3-3 from 1300 to 1000px
+@media (max-width: 1300px) {
+.Speaker {
+	width: 33.333333%;	
+}
+.SpeakersImageContainer img {
+	height: 33.333333vw;
+}
+.SpeakerOverlay {
+	height: 6.384615vw;
+	padding-top: 1vw;
+}
+.SpeakerOverlayName, .SpeakerOverlayTitle, .SpeakerOverlayCompany {	
+	font-size: 1.230769vw;
+}
+.sliphover-overlay {
+	padding: 1.5384615vw;	
+}
+.SpeakerName, .SpeakerJobtitle, .SpeakerCompany, .SpeakerInfo {
+	font-size: 1.230769vw;
+}
+.SpeakerInfo {
+	margin-top: 1.5384615vw;
+	line-height: 1.476923vw;	
+}
+.SpeakerSocialIconContainer {
+	bottom: 2.307692vw;
+}
+.SpeakerSocialIcon {
+	font-size: 1.6923076vw;
+	width: 3.076923vw;
+	height: 3.076923vw;
+	margin: 0 0.615384vw;
+}	
+}*/
+@media (max-width: 1000px) {
+#Speakers .Headline {
+	margin: 26px 0;	
+}
+.Speaker {
+	width: 50%;	
+}
+.SpeakersImageContainer img {
+	height: 50vw;
+}
+.SpeakerOverlay {
+	height: 10.807291vw;
+	padding-top: 1.6927083vw;
+}
+.SpeakerOverlayName, .SpeakerOverlayTitle, .SpeakerOverlayCompany {
+	font-size: 2.0833333vw;
+}
+.sliphover-overlay {
+	padding: 2.60416vw;	
+}
+.SpeakerName, .SpeakerJobtitle, .SpeakerCompany, .SpeakerInfo {
+	font-size: 2.08333vw;
+}
+.SpeakerInfo {
+	margin-top: 2.60416vw;
+	line-height: 2.5vw;	
+}
+.SpeakerSocialIconContainer {
+	bottom: 2vw;
+	left: 1vw;
+}
+.SpeakerSocialIcon {
+	font-size: 4vw;
+	width: 6.5vw;
+	height: 6.5vw;
+	margin: 0 1.7vw;
+}	
+}
+@media (max-width: 640px) {
+#Speakers .Headline {
+	margin: 60px 0;	
+	line-height: 110%;
+}
+.Speaker {
+	width: 100%;	
+}
+.SpeakersImageContainer img {
+	height: 100vw;
+}
+.sliphover-overlay {
+	display: none !important;
+}
+.SpeakerOverlay {
+	height: 69px;
+	padding-top: 6px;
+}
+.SpeakerOverlayName, .SpeakerOverlayTitle, .SpeakerOverlayCompany {
+	font-size: 16px;
+}
+#SpeakerAlarconG,
+#SpeakerPinkD,
+#SpeakerYipK,
+#SpeakerMorieuxY,
+#SpeakerBloomN,
+#SpeakerOtterT,
+#SpeakerLandersD,
+#SpeakerHurdM,
+#SpeakerSempleE,
+#SpeakerJonesK,
+#SpeakerMurarM,
+#SpeakerMazzellaF,
+#SpeakerTappinS {
+	display: none;	
+}
+}
+/* END Speakers */
+
+/* Sponsors */
+#Sponsors {
+	width: 100%;
+	background: url(../img/mainpage/sponsors/sponsor_bg.png) bottom no-repeat;
+	background-color:#000;
+	text-align: center;
+	background-size:contain;
+	padding-top: 3.385416vw;
+}
+#Sponsors .Headline {
+	color:#fff;	
+	margin-bottom: 3.385416vw;
+}
+#SponsorsGrid{
+  width: 88vw;
+  margin: 0 auto;
+  text-align: center;
+}
+.Sponsor{
+  width: 15vw;
+  display: inline-block;
+   margin-bottom: 4vw;
+   vertical-align: middle;
+}
+.SponsorLogoContainer{
+	  text-align: center;
+}
+.SponsorLogo{
+    max-width: 10vw;
+    max-height: 5vw;
+}
+#Sponsors .HRNButton {
+	margin-bottom: 3.90625vw;	
+}
+@media (max-width: 1920px) {
+#Sponsors {
+	padding-top: 65px;
+}
+#Sponsors .Headline {
+	margin-bottom: 65px;
+}
+#Sponsors .HRNButton {
+	margin-bottom: 75px;	
+}
+}
+@media (max-width: 1000px) {
+
+ .Sponsor{
+  width: 17vw;
+   margin-bottom: 6vw;	
+}
+}
+@media (max-width: 768px) {
+	#SponsorsGrid{
+       width: 58vw;
+   }	
+ .Sponsor{
+  width: 11vw;
+   margin-bottom: 6vw;	
+}	
+
+.SponsorLogo{
+    max-width: 8vw;
+    max-height: 5vw;
+}	
+}
+
+@media (max-width: 640px) {
+	.Sponsor {
+    width: 43vw;
+    margin-bottom: 11vw;
+}
+
+.SponsorLogo {
+    max-width: 24vw;
+    max-height: 16vw;
+}
+
+#SponsorsGrid {
+    width: 88vw;
+}
+}
+/* END Sponsors */
+
+/* Careers */
+#Careers {
+	text-align: center;	
+}
+#CareersLogo {
+	width: 5.4166vw;
+	margin-top: 1.927083vw;
+	margin-bottom: 0.4166vw;
+}
+#Careers .Headline {
+	margin-bottom: 0.4166vw;	
+}
+#Careers p {
+	width: 100%;
+	max-width: 47.39583vw;
+	font-size: 0.83333vw;
+	font-weight: 300;
+	margin: 0 auto;	
+	margin-bottom: 2.864583vw;
+	line-height: 0.989583vw;
+}
+@media (max-width: 1920px) {
+#CareersLogo {
+	width: 104px;
+	margin-top: 37px;
+	margin-bottom: 8px;
+}
+#Careers .Headline {
+	margin-bottom: 8px;	
+}
+#Careers p {
+	max-width: 910px;
+	font-size: 16px;
+	margin-bottom: 55px;
+	line-height: 19px;
+}	
+}
+@media (max-width: 1000px) {
+#CareersLogo {
+	width: 70px;
+	margin-top: 37px;
+	margin-bottom: 27px;
+}
+#Careers .Headline {
+	margin-bottom: 26px;
+	font-size: 50px;	
+}
+#Careers p {
+	max-width: 100%;
+	padding: 0 73px;
+	margin-bottom: 55px;
+}	
+}
+@media (max-width: 640px) {
+#Careers .Headline {
+	margin-bottom: 20px;
+}
+#Careers p {
+	padding: 0 20px;
+	margin-bottom: 50px;
+}		
+}
+/* END Careers */
+
+/* Maps */
+#Maps {
+	width:100%;
+	height:27.864583vw;
+	margin-top: 1.9270833vw;
+}
+/*
+.gmnoprint {
+	display:none;	
+}*/
+@media (max-width: 1920px) {
+#Maps {
+	height:535px;
+	margin-top: 37px;
+}	
+}
+@media (max-width: 1000px) {
+#Maps {
+	height: 480px;
+}
+}
+/* END Maps */

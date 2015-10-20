@@ -1,0 +1,295 @@
+@charset "utf-8";
+/* These CSS rules will effect every page defining the look of the menu */
+
+/* Logo */
+.HRNLogo {
+	width: 5.104166vw;
+	height: 1.510416vw;	
+	position: absolute;
+
+	z-index: 1000;
+}
+
+#HeaderLogoContainer {
+	position: relative;	
+}
+#HeaderFixedContainer{
+	z-index:50000000;
+	position:fixed;	
+	left: 3.125vw;
+	top: 1.145833vw;
+}
+@media (max-width: 1920px) {
+#HeaderFixedContainer{
+		left: 60px;
+	    top: 22px;
+}
+.HRNLogo {
+	width: 98px;
+	height: 29px;	
+
+}
+}
+@media (max-width: 1100px) {
+	#HeaderFixedContainer{
+		left: 22px !important;	
+	}
+}
+/* END Logo */
+
+/* Menu */
+#DesktopMenu {
+	width: 100%;
+	height: 3.90625vw;
+	background-color: #010101;
+	position: fixed;
+	top: -3.90625vw;	
+	opacity: 0;
+	z-index: 40;
+	transition: all 0.3s;	
+}
+#DesktopMenu.DesktopMenuActive {
+	top: 0;
+	opacity: 1;
+}
+#DesktopMenuList {
+	position: relative;
+	top: 1.302083vw;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	list-style-type: none;	
+	text-align: center;
+}
+.DesktopMenuItem {
+	display: inline-block;
+	position: relative;
+	font-size: 0.72916vw;
+	margin: 0 1.5625vw;
+	text-transform: uppercase;
+	top: -2.60416vw;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.DesktopMenuItemActive {
+	top: 0;
+	opacity: 1;
+}
+.DesktopMenuItem a, .MobileMenuItem a {
+	color: #fff;
+	transition: all 0.3s;
+}
+.DesktopMenuItem a:hover, .MobileMenuItem a:hover, .MenuItemActiveState a {
+	color: #44b3e6;	
+}
+#MobileMenu {
+	display: none;	
+}
+@media (max-width: 1920px) {
+#DesktopMenu {
+	height: 75px;
+	top: -75px;	
+}
+#DesktopMenuList {
+	top: 25px;
+}
+.DesktopMenuItem {
+	font-size: 14px;
+	margin: 0 30px;
+	top: -50px;
+}
+.DesktopMenuItemActive {
+	top: 0;
+	opacity: 1;
+}
+}
+@media (max-width: 1100px) {
+	.DesktopMenuItem {
+		margin: 0 20px;
+	}
+}
+@media (max-width: 1000px) {
+#DesktopMenu {
+	display: none;	
+}
+#MobileMenu {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: -150vw;
+	width: 100vw;
+	height: 100vh;
+	background-color: #010101;	
+	z-index: 40;
+	transition: right 0.3s;
+}
+#MobileMenu.MobileMenuActive {
+	right: 0;	
+}
+#MobileMenuList {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	list-style-type: none;	
+	text-align: center;
+	padding-top: 30vh;
+}
+.MobileMenuItem {
+	display: block;
+	position: relative;
+	
+	right: -200vw;
+	opacity: 0;
+	
+	font-size: 14px;
+	margin: 0 auto;
+	margin-bottom: 18px;
+	text-transform: uppercase;
+	transition: all 0.7s;
+}
+.MobileMenuItemActive {
+	right: 0;
+	opacity: 1;
+}
+}
+/* END Menu*/
+
+/* Burger Menu */
+.c-hamburger {
+  display: block;
+  overflow: hidden;
+  width: 1.822916vw;
+  height: 1.822916vw;
+  font-size: 0;
+  text-indent: -9999px;
+  border: none;
+  cursor: pointer;
+  
+  	position: fixed;	
+	right: 3.385416vw;
+    top: 1.04166vw;
+	z-index: 1000;
+}
+.c-hamburger:focus {
+  outline: none;
+}
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 0.78125vw;
+  left: 0;
+  right: 0;
+  height: 0.208333vw;
+  background: #fff;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 0.208333vw;
+  background-color: #fff;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: 0.520833vw;
+}
+
+.c-hamburger span::after {
+  bottom: 0.520833vw;
+}
+
+.c-hamburger--htx {
+  background-color: transparent;
+}
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  background-color: transparent;
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+@media (max-width: 1920px) {
+.c-hamburger {
+  width: 35px;
+  height: 35px;
+  
+  	right: 65px;
+    top: 20px;
+}
+.c-hamburger span {
+  top: 15px;
+  height: 4px;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  height: 4px;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: 10px;
+}
+
+.c-hamburger span::after {
+  bottom: 10px;
+}	
+}
+@media (max-width: 1100px) {
+.c-hamburger {
+	/*top: 15px;*/
+	right: 30px;	
+}
+}
+
+.WhiteBurger, .WhiteBurger::before, .WhiteBurger::after {
+	background:#fff !important;
+	    transition-duration: 0s, 0s !important;
+    transition-delay: 0s, 0s !important;
+}
+
+.BlackBurger, .BlackBurger::before, .BlackBurger::after {
+	background:#000 !important;
+	    transition-duration: 0s, 0s !important;
+    transition-delay: 0s, 0s !important;
+}
